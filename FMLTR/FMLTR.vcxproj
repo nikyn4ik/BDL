@@ -24,6 +24,7 @@
     <ProjectGuid>{74be0c65-4071-49ed-8af3-f15b0902d312}</ProjectGuid>
     <RootNamespace>FMLTR</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BDL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

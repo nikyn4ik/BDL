@@ -20,18 +20,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\dvd.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="BDL.rc">
+    <Image Include="..\1.jpg">
       <Filter>Resource Files</Filter>
-    </ResourceCompile>
+    </Image>
+    <Image Include="..\2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\download.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\dvd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

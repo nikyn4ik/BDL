@@ -3,14 +3,15 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode::getFullscreenModes()[0], "Bouncing DVD logo", 
-        sf::Style::Fullscreen);
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Bouncing DVD Logo", sf::Style::Fullscreen);
     window.setFramerateLimit(60);
-
+    window.setVerticalSyncEnabled(true);
     sf::Texture texture;
-    texture.loadFromFile("dvd.png");
+    texture.loadFromFile("2.jpg");
     sf::Sprite sprite(texture);
-    sprite.setOrigin(sprite.getLocalBounds().width / 2, sprite.getLocalBounds().height / 2);
+
+    float dx = 200.0f;
+    float dy = 200.0f;
 
     sf::Vector2f direction(5.0f, 5.0f);
     sf::Color color(255, 0, 0);

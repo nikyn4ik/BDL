@@ -137,13 +137,21 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\dvd.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="BDL.rc" />
+    <Image Include="..\1.jpg">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\2.jpg">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\download.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\dvd.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

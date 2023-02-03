@@ -4,11 +4,17 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "Bouncing DVD Logo", sf::Style::Fullscreen);
-    window.setFramerateLimit(60);
-    window.setVerticalSyncEnabled(true);
+    std::string filePath = "download.png"; // put the path in a separate variable
+
     sf::Texture texture;
-    texture.loadFromFile("2.jpg");
-    sf::Sprite sprite(texture);
+    if (!texture.loadFromFile(filePath))// load the texture using the file path
+    {
+        std::cout << "Failed to load image \"" << filePath << "\"." << std::endl;
+        return 1;
+    }
+
+    sf::Sprite sprite;
+    sprite.setTexture(texture);
 
     float dx = 200.0f;
     float dy = 200.0f;

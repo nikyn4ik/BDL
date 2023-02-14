@@ -5,11 +5,11 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Bouncing DVD Logo", sf::Style::Fullscreen);
-    std::string filePath = "download.png"; // put the path in a separate variable
+    sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Bouncing DVD Logo", sf::Style::Fullscreen);
+    std::string filePath = "C:\\Users\\Nikyn\\source\\repos\\BDL\\dvd.png";
 
     sf::Texture texture;
-    if (!texture.loadFromFile(filePath))// load the texture using the file path
+    if (!texture.loadFromFile(filePath))
     {
         std::cout << "Failed to load image \"" << filePath << "\"." << std::endl;
         return 1;
@@ -18,11 +18,14 @@ int main()
     sf::Sprite sprite;
     sprite.setTexture(texture);
 
-    float dx = 200.0f;
-    float dy = 200.0f;
+    float dx = 100.0f;
+    float dy = 100.0f;
 
-    sf::Vector2f direction(5.0f, 5.0f);
+    sf::Vector2f direction(dx, dy);
     sf::Color color(255, 0, 0);
+
+    sprite.setScale(0.33f, 0.33f);
+    sprite.setOrigin(sprite.getLocalBounds().width / 2, sprite.getLocalBounds().height / 2);
 
     while (window.isOpen())
     {

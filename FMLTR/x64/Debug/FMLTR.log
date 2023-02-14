@@ -1,3 +1,12 @@
-﻿F:\Visual Studio 22\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (FMLTR.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (FMLTR.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
-  FMLTR.vcxproj -> C:\Users\Nika\source\repos\BDL\x64\Debug\BDL.exe
+C:\Users\Nikyn\source\repos\BDL\FMLTR\main.cpp(27,11): error C2660: 'sf::Transformable::setScale': function does not take 2 arguments
+C:\SFML-2.5.1\include\SFML\Graphics\Transformable.hpp(97,10): message : see declaration of 'sf::Transformable::setScale'
+C:\Users\Nikyn\source\repos\BDL\FMLTR\main.cpp(27,11): message : while trying to match the argument list '(float, float)'
+C:\Users\Nikyn\source\repos\BDL\FMLTR\main.cpp(28,11): error C2660: 'sf::Transformable::setOrigin': function does not take 2 arguments
+C:\SFML-2.5.1\include\SFML\Graphics\Transformable.hpp(114,10): message : see declaration of 'sf::Transformable::setOrigin'
+C:\Users\Nikyn\source\repos\BDL\FMLTR\main.cpp(28,11): message : while trying to match the argument list '(T, T)'
+          with
+          [
+              T=float
+          ]
